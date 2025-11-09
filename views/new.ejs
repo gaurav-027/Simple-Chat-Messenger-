@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body{
+        background-color: rgba(0, 0, 0, 0.15);
+        box-shadow: 5px 5px 10px gray;
+        padding: 10px;
+        text-align: center;
+        width: 20%;
+    }
+    
+    input{
+        border:none;
+        border-radius: 5px;
+        height: 50px;
+        width: 150px;
+    }
+    .edit{
+        margin: 0px 10px 10px 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: azure;
+    }
+
+</style>
+<body>
+    <div class="body">
+        <h2>Write New Chat</h2>
+        <form method="post" action="/chats">
+            <input type="text" placeholder="Sender Name." name="from">
+            <br><br>
+            <textarea name="msg" rows="5" cols="30" placeholder="Write your message here..."></textarea>
+            <br><br>
+            <input type="text" placeholder="Reciever Name" name="to">
+            <br><br>
+            <button class="edit">Create Chat</button>
+        </form>
+    </div>
+</body>
+</html>
